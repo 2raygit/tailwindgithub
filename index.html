@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Portefeuille Personnel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Ajoutez vos styles personnalisés ici */
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- En-tête -->
+    <header>
+        <nav class="bg-gray-100">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">menu</span>
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex flex-shrink-0 items-center">
+                            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="index.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Accueil</a>
+                                <a href="#skills" class="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">skills</a>
+                                <a href="#projets" class="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projets</a>
+                                <a href="#contact" class="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                            
+                              </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">notifications</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.905.618 4.008.928 6.312.928s4.407-.31 6.312-.928zM12 21a2 2 0 01-2-2h4a2 2 0 01-2 2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#acc" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projets</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <section class="  bg-gray-900 text-white py-20" >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+          <!-- Photo à gauche -->
+          <div class="flex-shrink-0">
+              <img src="image/img.jpeg" alt="Votre photo" class="h-48 w-48 rounded-full" />
+          </div>
+          <!-- Texte de présentation à droite -->
+          <div class=" container ml-6">
+              <h1 class="text-4xl font-extrabold tracking-tight">Touray, Développeur Fullstack</h1>
+              <p class="mt-4 text-lg">Je suis un développeur Fullstack passionné par la création d'applications web innovantes. .</p>
+          </div>
+      </div>
+  </section>
+        <!-- Section des compétences -->
+        <!-- Section Compétences -->
+<section id="skills" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8" style="background-image: url(https://img.freepik.com/free-photo/3d-background-with-white-cubes_23-2150473002.jpg?t=st=1713988970~exp=1713992570~hmac=6aa0504365dc1c2ef4399e5d3750405624c596fd99a1ae6e26d3dc81970f4a46&w=996);">
+  <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-extrabold text-gray-900">Compétences</h2>
+      <!-- Liste des compétences -->
+      <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- Compétence HTML -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img class="w-full h-48 object-cover" src="https://grafikart.fr/uploads/attachments/2017/508-600a91df43655220452798.jpg" alt="HTML">
+              <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-900">HTML</h3>
+                  <p class="mt-2 text-gray-600">Maîtrise avancée de HTML pour la création de sites web.</p>
+              </div>
+          </div>
+          <!-- Compétence React -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img class="w-full h-48 object-cover" src="https://miro.medium.com/v2/resize:fit:2000/1*y6C4nSvy2Woe0m7bWEn4BA.png" alt="React">
+              <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-900">React</h3>
+                  <p class="mt-2 text-gray-600">Expérience approfondie dans le développement avec React.</p>
+              </div>
+          </div>
+          <!-- Compétence Java -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img class="w-full h-48 object-cover" src="https://miro.medium.com/v2/resize:fit:800/1*bthRXJ_FBspSEijOWIRM2A.png" alt="Java">
+              <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-900">Java</h3>
+                  <p class="mt-2 text-gray-600">Solide connaissance de Java pour le développement d'applications.</p>
+              </div>
+          </div>
+          <!-- Ajoutez plus de compétences ici -->
+          <!-- Compétence CSS -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+  <img class="w-full h-48 object-cover" src="https://endpoint.educrak.com/uploads/cours/photos/553c448e8376af963fcd8427e2f15130.jpeg" alt="CSS">
+  <div class="p-6">
+      <h3 class="text-lg font-bold text-gray-900">CSS</h3>
+      <p class="mt-2 text-gray-600">Expertise avancée en CSS pour la mise en page et le stylisme des sites web.</p>
+  </div>
+</div>
+
+      </div>
+  </div>
+</section>
+
+
+
+
+        <!-- Section des projets -->
+       <!-- Section Projets récents -->
+<section id="projets" class="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-extrabold">Projets récents</h2>
+      <!-- Liste des projets -->
+      <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- Projet 1 -->
+          <div class="group relative">
+              <a href="lien_projet_1" target="_blank">
+                  <img class="w-full h-56 object-cover" src="https://img.freepik.com/free-photo/marketing-creative-collage-with-phone_23-2149379900.jpg?t=st=1713986451~exp=1713990051~hmac=ebe48074e6358711f65f0cd299bd827c2df43a746749454f3990b7cb894a4b0d&w=826" alt="Projet 1">
+                  <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition duration-300 opacity-0 group-hover:opacity-100">
+                      <!-- Description affichée au survol -->
+                      <p class="absolute inset-0 flex items-center justify-center text-white text-lg font-bold">Application mobile: Une application mobile innovante pour faciliter la gestion des tâches quotidiennes.</p>
+                  </div>
+              </a>
+          </div>
+          <!-- Projet 2 -->
+          <div class="group relative">
+              <a href="lien_projet_2" target="_blank">
+                  <img class="w-full h-56 object-cover" src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg?t=st=1713986588~exp=1713990188~hmac=4f8811e8932f370513990d0e23c342cabab13ed640a8a82ee152893118279b01&w=996" alt="Projet 2">
+                  <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition duration-300 opacity-0 group-hover:opacity-100">
+                      <!-- Description affichée au survol -->
+                      <p class="absolute inset-0 flex items-center justify-center text-white text-lg font-bold">Site Ecommerce: Une plateforme de commerce électronique pour vendre vos produits en ligne.</p>
+                  </div>
+              </a>
+          </div>
+          <!-- Projet 3 -->
+          <div class="group relative">
+              <a href="lien_projet_3" target="_blank">
+                  <img class="w-full h-56 object-cover" src="https://img.freepik.com/free-psd/mailer-landing-page-template-design_23-2149234139.jpg?t=st=1713986676~exp=1713990276~hmac=ad82a402f77831724c9775be8d75691f60c7f5f41eb56dfe356802043704b2a2&w=1380" alt="Projet 3">
+                  <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition duration-300 opacity-0 group-hover:opacity-100">
+                      <!-- Description affichée au survol -->
+                      <p class="absolute inset-0 flex items-center justify-center text-white text-lg font-bold">Site de service de livraison: Une plateforme pour commander des services de livraison rapide et efficace.</p>
+                  </div>
+              </a>
+          </div>
+          <!-- Projet 4 -->
+          <div class="group relative">
+              <a href="lien_projet_4" target="_blank">
+                  <img class="w-full h-56 object-cover" src="https://img.freepik.com/free-psd/social-distancing-landing-page-with-photo_23-2148633972.jpg?t=st=1713986791~exp=1713990391~hmac=c4451acb82221af85e72fc1137413814cb4f68725fad6886210ff2e775656be8&w=1380" alt="Projet 4">
+                  <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition duration-300 opacity-0 group-hover:opacity-100">
+                      <!-- Description affichée au survol -->
+                      <p class="absolute inset-0 flex items-center justify-center text-white text-lg font-bold">Site vitrine: Un site web moderne et élégant pour présenter vos produits ou services.</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+        <!-- Section du formulaire de contact -->
+        <section id="contact" class="bg-gray-100 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-extrabold text-gray-900">Nous contacter</h2>
+                <form class="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <div>
+                        <label for="nom" class="block text-sm font-medium text-gray-700">Nom complet</label>
+                        <div class="mt-1">
+                            <input type="text" name="nom" id="nom" autocomplete="name" class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Adresse email</label>
+                        <div class="mt-1">
+                            <input id="email" name="email" type="email" autocomplete="email" class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <div class="mt-1">
+                            <textarea id="message" name="message" rows="4" class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"></textarea>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-400">&copy; 2024 touray portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
